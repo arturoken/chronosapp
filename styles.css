@@ -1,0 +1,219 @@
+html{
+
+	height: 100%;
+	overflow-x: hidden;
+
+}
+
+body{
+
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	overflow-y: hidden;
+
+}
+
+
+.header{
+
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.op-header{
+
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.op-header img{
+	
+	padding: 15px;
+	cursor: pointer;
+	border-radius: 20px;
+	padding: 15px;
+	transition: all .5s ease;
+
+
+}
+
+.op-header img:hover{
+
+	background-color: #ebedef;
+	transition: all .5s ease;
+
+}
+
+.op-header img:active{
+	
+	background-color: #ebedef;
+
+
+}
+
+
+.botones{
+
+	text-align: center;
+	margin: 10px;
+
+}
+
+.botones img{
+
+	margin: 10px;
+	border: 1px solid #cacaca;
+	padding: 10px;
+	border-radius: 100%;
+	cursor: pointer;
+	outline: none;
+}
+
+.cronometro{
+
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contador h2{
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 60px;
+
+}
+
+.contador{
+
+	position: relative;
+
+}
+
+.contador::before{
+
+	content: "" ;
+	position: absolute;
+	z-index: 1;
+	background-color: #cacaca;
+	width: 100%;
+	border: 1px solid #cacaca;
+	bottom: 0px ;
+	height: 1px;
+
+
+}
+
+.circulo_secons{
+
+
+	position: absolute;
+	background-color: #5D5FEF;
+	z-index: 2;
+	border-radius: 100px;
+	width: 20px;
+	height: 20px;
+	bottom: -9px;
+
+
+
+
+}
+
+.img3{
+
+	border-radius: 20px;
+	background-color: #ebedef;
+	padding: 15px;
+
+}
+
+.animation-active{
+
+	animation: move 60s linear infinite;
+
+
+}
+
+
+.animation-pause{
+
+	animation-play-state: paused;
+
+}
+@keyframes move{
+
+	from {
+
+		transform: translateX(0px);
+	}
+
+	to{
+
+		transform: translateX(240px);
+
+	}
+
+}
+
+
+
+.loader{
+
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+}
+
+.byPower{
+
+	position: absolute;
+	bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.byPower p{
+
+	padding: 0px;
+	margin: 2px;
+	color:    #808b96  ;
+}
+.remove{
+
+	display: none;
+}
+
+.remove-loader2{
+
+	visibility: hidden;
+	transition: all 3s ease;
+
+}
+.remove-loader{
+
+	transform: translateX(5000px);
+	transition: all 2s ease ;
+
+}
